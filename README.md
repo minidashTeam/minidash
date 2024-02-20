@@ -5,7 +5,7 @@ MiniDash는 Lodash에서 영감을 받은 경량화되고 간소화된 JavaScrip
 ## 특징
 - 배열, 객체, 문자열을 다루기 위한 사용하기 쉬운 API 제공
 - 외부 의존성 없는 경량화 
-- 누구에게나 열여있는 오픈소스
+- 누구에게나 열려있는 오픈소스
 
 ## 설치 
 ```bash
@@ -14,7 +14,10 @@ npm install minidash
 
 ## 사용법
 ```js
-const minidash = require('minidash');
+import { checkedArr } from minidash;
+
+checkedArr([1, 2]); // true
+
 ```
 
 ## 기여하기
