@@ -20,7 +20,7 @@ jobs: # 작업 정의
                 return; # 종료
             }
 
-            const body = pull_request.body;
+            const body = pull_request.body; # 본문담기
 
             if (!body) {
                 // PR에 코멘트 추가.
