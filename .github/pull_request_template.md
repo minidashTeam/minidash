@@ -1,3 +1,5 @@
+아래 기입내용을 작성해주시고 해당 라인을 삭제해주세요.
+
 # minidash pull request 양식
 
 ## PR 작업
