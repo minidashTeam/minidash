@@ -13,7 +13,6 @@ jobs: # 작업 정의
       - name: Check PR and Take Actions # 작업 이름 설정
         uses: actions/github-script@v7 # GitHub 스크립트 액션 사용
         with: # 옵션 설정
-          github-token: ${{ secrets.GITHUB_TOKEN }} # GitHub 토큰 사용
           script: |
             // async 함수로 스크립트 래핑
             async function run() {
