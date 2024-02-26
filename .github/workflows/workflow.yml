@@ -25,7 +25,9 @@ jobs: # 작업 정의
 
               const body = pull_request.body; // 본문담기
 
-              if (!body) {
+              const message = "아래 기입내용을 작성해주시고 해당 라인을 삭제해주세요."
+
+              if (!body || body.includes(message)) {
                   try {
                       // PR에 코멘트 추가.
                       await github.rest.issues.createComment({ // PR에 코멘트 추가
